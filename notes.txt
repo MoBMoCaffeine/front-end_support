@@ -1,0 +1,13 @@
+- by default the elements box-sizing property has the value content-box. It means that when we set width 200px and padding 30px the total width will be 230px
+  ,so its better to set global style to the document elements to have box-sizing:border-box to include both content and padding dimensions.
+- Inline elements do not have an explicit width; their size is determined by their content.
+  They cannot accept width or height properties., unlike the block elements which have width: auto by default, which usually makes them stretch to 100% of their container. 
+  img element is inline despite it has width and height properties to be set that's because they control the content size not the container box itself.
+- some elements have default margin and padding properties so we set them to 0 with a global selector '*' when we want to reset them manually later.
+- the default position of html elements is 'static'
+- element with position: relative is offset (top, right, bottom, left) relative to its original position.
+- an element with position: absolute is positioned relative to the nearest ancestor with a position other than static.
+  If no such ancestor exists, it is positioned relative to the initial containing block (viewport).
+- position: sticky often used with the header nav-bar to stick to the page upper limit while scrolling. to work muse set one of(top, bottom) dimension where the element will stick.
+- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>  embedd the fontAwesome icons in the document.
+- most font icons are of type fa-solid, some others of type fa-regular or fa-brands.

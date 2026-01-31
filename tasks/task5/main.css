@@ -1,0 +1,73 @@
+*{
+    box-sizing:border-box;
+}
+
+.product-card{
+    margin:5px auto;
+    width:300px;
+    display:inline-block;
+    /* display:flex;
+    flex-direction:column;
+    align-items:center; */
+    text-align: center;
+    padding:10px 7px;
+    border-radius:7px;
+    border:2px solid #ddd;
+    box-shadow:3px 3px 2px #eee;
+}
+
+.product-card:hover{
+    display:none;
+    /* visibility:hidden; */
+}
+
+.product-card>Button{
+    color:white;
+    border:none;
+    background-color: black;
+    border-radius:5px;
+    padding:3px 5px;
+    width:100px;
+    margin:7px;
+}
+
+.product-card>span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.products-container{
+    width:100%;
+}
+
+.nav-bar{
+    background-color: black;
+    border-radius:5px;
+    margin:5px auto 20px;
+    width:fit-content;
+    padding:3px 5px;
+    position: sticky;
+    top:0;
+}
+
+.nav-bar>ul{
+    list-style-type: none;
+    margin:0;
+}
+
+.nav-bar>ul>li{
+    display:inline-block;
+    margin:5px 20px;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+#whatsApp-logo{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    position:fixed;
+}
