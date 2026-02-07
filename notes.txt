@@ -14,7 +14,9 @@
 - element with position: relative is offset (top, right, bottom, left) relative to its original position.
 - an element with position: absolute is positioned relative to the nearest ancestor with a position other than static.
   If no such ancestor exists, it is positioned relative to the initial containing block (viewport).
-- position: sticky often used with the header nav-bar to stick to the page upper limit while scrolling. to work muse set one of(top, bottom) dimension where the element will stick.
+- position: sticky often used with the header nav-bar to stick to the upper limit of the page while scrolling. to work must set one of(top, bottom) dimension where the element will stick.
+- in order for top, bottom, right, left values to work the elment must have position other than 'static'.
+- If multiple position declarations are applied to the same element, the last one wins (CSS cascade).
 
                             fontawesome icons
 - to enable using fontAwesome icons in the document add one of these two link tags provided by csnjs website:
@@ -41,3 +43,13 @@
 - order: the default value is 0. items with custom lower order(-1) comes first and vice versa.
 
 - semantic elements (header, footer, main, aside, section) used for SEO.
+
+                              grid system
+*parent properties:
+- display:grid 
+- grid-template-columns: takes value for each column with different width (px, %, fr, auto). or repeat(#columns, colWidth) for symmetric columns;
+- grid-template-rows: takes value for each row with different height (px, %, fr, auto). or repeat(#rows, rowHeight) for symmetric rows;
+- fr stands for 'fraction' means dividing rows or columns fractionally (1:2), (2:1:3) from the total dimension of the parent container.
+- 'auto' differ from 'fr' in that it gives the row or column automatic dimension from the available parent space according to its content.
+- row-gap, column-gap with shorthand(gap: row col;).
+- justify-items: horizontally in the cells & align-items: vertically in the cells. with the shorthand (place-items)
