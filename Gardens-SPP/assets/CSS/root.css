@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: rgb(45, 168, 132);
+    --black : rgb(35, 42, 66);
+    --white: rgb(213, 237, 230);
+    --hover-color: rgb(45, 168, 132, 0.6);
+    --shadow-normal: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-big: 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+    --container-width: 1400px;
+
+    --font-style: 'inter', sans-serif;
+}
